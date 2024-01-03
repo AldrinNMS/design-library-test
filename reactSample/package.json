@@ -1,6 +1,6 @@
 {
-  "name": "reactsample",
-  "private": true,
+  "name": "design-library-test",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -55,5 +55,21 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "vite": "^5.0.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldrinNMS/design-library-test.git"
+  },
+  "keywords": [
+    "Design",
+    "Library"
+  ],
+  "author": "Aldrin Villalobos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AldrinNMS/design-library-test/issues"
+  },
+  "homepage": "https://github.com/AldrinNMS/design-library-test#readme"
 }
