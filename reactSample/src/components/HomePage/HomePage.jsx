@@ -1,4 +1,4 @@
-import {React, Fragment, useState, useEffect} from "react";
+import { React, Fragment, useState, useEffect } from "react";
 import {
   Box,
   Button,
@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 
 import HomepageAvatar from "/images/HomeAvatar.png";
-import {BANNERS, PLATFORM_CARDS} from "../../config/data";
+import { BANNERS, PLATFORM_CARDS } from "../../config/data";
 
 export const HomePage = () => {
   return (
@@ -30,14 +30,14 @@ export const HomePage = () => {
           }}
         >
           <Stack direction="row" spacing={4}>
-            <Box sx={{display: "flex", alignItems: "center"}}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <Avatar
                 src={HomepageAvatar}
-                sx={{width: "130px", height: "130px"}}
+                sx={{ width: "130px", height: "130px" }}
               />
             </Box>
 
-            <Box sx={{display: "flex", alignItems: "center"}}>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
               <Stack direction="column">
                 <Typography variant="h3l" color="white">
                   {banner.greeting}
@@ -66,7 +66,7 @@ export const HomePage = () => {
               }}
             >
               <Stack direction="row">
-                <Box sx={{display: "flex", alignItems: "center"}}>
+                <Box sx={{ display: "flex", alignItems: "center" }}>
                   <Stack>
                     <Typography variant="h6" color="white">
                       {card.desc}
@@ -77,7 +77,7 @@ export const HomePage = () => {
                   </Stack>
                 </Box>
 
-                <Box sx={{justifyItems: "end"}}>{card.cardIcon}</Box>
+                <Box sx={{ justifyItems: "end" }}>{card.cardIcon}</Box>
               </Stack>
             </Paper>
           </Grid>
