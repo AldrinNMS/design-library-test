@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,14 +12,14 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import {DeveloperBoard, MenuBook} from "@mui/icons-material";
-import {Button} from "@mui/material";
+import { DeveloperBoard, MenuBook } from "@mui/icons-material";
+import { Button } from "@mui/material";
 
 const drawerWidth = 240;
 
-export default function Sidebar({toggleDarkMode}) {
+export default function Sidebar({ toggleDarkMode }) {
   return (
-    <Box sx={{display: "flex"}}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -53,6 +53,14 @@ export default function Sidebar({toggleDarkMode}) {
                 <DeveloperBoard />
               </ListItemIcon>
               <ListItemText primary="Homepage" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem>
+            <ListItemButton component={Link} to="/cards">
+              <ListItemIcon>
+                <DeveloperBoard />
+              </ListItemIcon>
+              <ListItemText primary="CardPage" />
             </ListItemButton>
           </ListItem>
           <ListItem>

@@ -20,6 +20,7 @@ import { SampleChart } from "./components/Pages/SampleChart";
 import { CodePage } from "./components/Pages/CodePage";
 
 import { DropzonePage } from "./components/Pages/DropzonePage";
+import { CardPage } from "./components/Pages/CardPage";
 
 export const Routers = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -53,11 +54,11 @@ export const Routers = () => {
         >
           <Routes>
             <Route path="/homepage" element={<HomePage />} />
+            <Route path="/cards" element={<CardPage />} />
             <Route path="/typography" element={<SampleTypo />} />
             <Route path="/components" element={<Components />} />
             <Route path="/basicForm" element={<BasicForm />} />
             <Route path="/dialogPage" element={<DialogPage />} />
-
             <Route path="/icons" element={<DisplayIcon />} />
             <Route path="/dataGrid" element={<SampleDataGrid />} />
             <Route path="/colors" element={<SampleColors />} />
